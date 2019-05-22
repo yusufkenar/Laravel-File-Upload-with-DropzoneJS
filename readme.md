@@ -10,20 +10,14 @@ View
           Drop Files here or click to upload.<br/>  
          <span class="note needsclick">(Accept file types: <strong>JPEG, JPG, PNG</strong>)</span>  
     @section('styles')    
-    <link href="{{ fasset('vendor/dropzone/dropzone.css') }}" rel="stylesheet">
+    <link href="{{ asset('vendor/dropzone/dropzone.css') }}" rel="stylesheet">
          </div></form>  
     @endsection  
     @section('scripts')
-         <script src="{{ fasset('vendor/dropzone/dropzone.js') }}"></script>  
+         <script src="{{ asset('vendor/dropzone/dropzone.js') }}"></script>  
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>  
       
     <script type="text/javascript">  
-      const Toast = Swal.mixin({  
-            toast: true,  
-      position: 'bottom-end',  
-      showConfirmButton: false,  
-      timer: 3000  
-      });  
       Dropzone.options.dropzone =  
 	  {  
 	      maxFilesize: 12,  
